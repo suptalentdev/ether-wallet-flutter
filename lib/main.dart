@@ -8,7 +8,6 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 
 void main() async {
   // bootstrapping;
-  WidgetsFlutterBinding.ensureInitialized();
   final stores = await createStore(AppConfig().params["ropsten"]);
 
   runApp(MainApp(stores));
